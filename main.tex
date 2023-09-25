@@ -1,0 +1,57 @@
+\documentclass{ipn}
+
+\usepackage{ipnstyle}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\usepackage{minted}
+% \usepackage{cite}
+
+\author{Lic. Your Name}
+\title{Your awsome thesis title}
+\schoolname{Centro de Investigación en Computación}
+\degree{Maestría en Ciencias de la Computación}
+\advisor{Dr. Main Advisor}
+\coadvisor{Dr. Co Advisor}
+\academicyear{Enero 2025}
+
+\hypersetup{
+    colorlinks=false,
+    pdfauthor={Your Name},
+    pdftitle={Your awsome thesis title},
+    pdfsubject={Thesis},
+    pdfkeywords={keyword1, keyword2, keyword3}
+    pdfproducer={Latex with hyperref},
+    pdfcreator={pdflatex}
+}
+
+\addbibresource{./references.bib}
+\pagestyle{headings}
+
+\begin{document}
+\frontmatter
+    \maketitle
+    \input{frontmatter/advertisement}
+    \input{frontmatter/abstract}
+    \input{frontmatter/acknowledgements}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \listofalgorithms
+
+\mainmatter
+    \include{chapters/chapter01}
+    \include{chapters/chapter02}
+
+    \appendix
+        \include{chapters/appendixA}
+        \include{chapters/appendixB}
+
+\backmatter
+    \bookmarksetup{startatroot}
+    \printbibliography[heading=bibintoc]
+\end{document}

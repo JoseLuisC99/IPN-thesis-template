@@ -1,0 +1,72 @@
+\chapter{Introduction}\label{ch:Introduction}
+\lipsum[1]
+
+\section{Research problem}
+\lipsum[1]
+\begin{definition}[Open space]
+A subset $U$ of a metric space $(M, d)$ is called open if, for any point $x$ in $U$, there exists a real number $\epsilon > 0$ such that any point $y\in M$ satisfying $d(x, y) < \epsilon$ belongs to $U$. Equivalently, $U$ is open if every point in $U$ has a neighborhood contained in $U$.
+\end{definition}
+\lipsum[1]
+
+\section{Objectives}
+\subsection{General objective}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit~\cite{adam2015higgs, atlas2014neural, baldi2014searching}. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+
+\subsection{Specific objectives}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit:
+\begin{itemize}
+    \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+    \item Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+    \item  Pellentesque habitant morbi tristique senectus et netuset malesuada fames ac turpis egesta
+\end{itemize}
+
+\section{Justification}
+\lipsum[1]
+
+\section{Project scope and limitations}
+\lipsum[1]
+\begin{theorem}
+The kernel of a linear transformation from a vector space V to a vector space W is a subspace of V.
+\end{theorem}
+\begin{proof}
+    Suppose that u and v are vectors in the kernel of L.  Then 
+    \begin{equation}
+        L(u) = L(v) = 0
+    \end{equation}
+    We have
+    \begin{equation}
+        L(u + v) = L(u) + (v) = 0 + 0 = 0 
+    \end{equation}
+    and
+    \begin{equation}
+        L(cu) = cL(u) = c0 = 0
+    \end{equation}
+    Hence $u + v$ and cu are in the kernel of $L$. We can conclude that the kernel of $L$ is a subspace of $V$.
+\end{proof}
+\lipsum[1]
+
+\begin{algorithm}[H]
+    \caption{Descenso de gradiente estocástico}\label{alg:SGD}
+    \hspace*{\algorithmicindent} \textbf{parameters} \\
+    \hspace*{\algorithmicindent}\hspace*{\algorithmicindent} Número de iteraciones $\tau$ \\
+    \hspace*{\algorithmicindent}\hspace*{\algorithmicindent} Tasa de aprendizaje $\eta$ \\
+    \hspace*{\algorithmicindent}\hspace*{\algorithmicindent} Parámetro de regularización $\lambda$ \\
+    \hspace*{\algorithmicindent} \textbf{input} \\
+    \hspace*{\algorithmicindent}\hspace*{\algorithmicindent} Pesos iniciales $\mathbf{w}^{(1)}$ \\
+    \hspace*{\algorithmicindent}\hspace*{\algorithmicindent} Gradiente en una muestra $\mathcal{Q}_i(w)$
+    \begin{algorithmic}[1]
+        \Procedure{SGD}{$\mathbf{w}^{(1)}, \sigma$}
+        \For{$i \gets 1, 2, \dots, \tau$}
+        \State Selecciona una muestra $(\mathbf{x}, \mathbf{y})\sim D$
+        \State Calcula el gradiente $\nabla\mathcal{Q}_i(w)$ para la muestra $(\mathbf{x}, \mathbf{y})$
+        \State Asigna $\mathbf{w}^{(i+1)} \gets \mathbf{w}^{(i)} - \eta(\nabla\mathcal{Q}_i(w) + \lambda\mathbf{w}^{(i)})$
+        \EndFor
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\section{Hypothesis}
+\lipsum[1-2]
+
+\section{Project organization}
+\lipsum[1-2]
